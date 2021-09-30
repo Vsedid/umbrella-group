@@ -59,7 +59,12 @@ function umbrella_get_ab_test_tags(): array
 {
     $ab_tests_array = [];
 
-    if (isset($_COOKIE['exp_xSthYnX-SKuIkAVV_GvSuw'])) {
+    if($_SERVER['REMOTE_ADDR'] == '91.201.73.175')
+    {
+        $expVar = "0";
+        $GLOBALS['expVar'] = "0";
+    }
+    elseif (isset($_COOKIE['exp_xSthYnX-SKuIkAVV_GvSuw'])) {
         $expVar = $_COOKIE['exp_xSthYnX-SKuIkAVV_GvSuw'];
     } elseif(isset($GLOBALS['expVar'])) {
         $expVar = $GLOBALS['expVar'];

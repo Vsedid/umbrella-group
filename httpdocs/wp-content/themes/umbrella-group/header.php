@@ -9,6 +9,7 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="cmsmagazine" content="6436b2df9477c3bdde6dd89690ae98b9"/>
+    <meta name="ip" content="<?php echo $_SERVER["REMOTE_ADDR"] ?>">
     <link rel="profile" href="http://gmpg.org/xfn/11"/>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
 
@@ -244,8 +245,8 @@
             ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ?
             screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) +
         ";h" + escape(document.title.substring(0, 150)) +
-        ";" + Math.random();</script><!--/LiveInternet-->
-
+        ";" + Math.random();</script>
+<!--/LiveInternet-->
 <?php do_action('flatsome_after_body_open'); ?>
 
 <a class="skip-link screen-reader-text" href="#main"><?php esc_html_e('Skip to content', 'flatsome'); ?></a>

@@ -91,7 +91,7 @@ function get_similar_posts(){
 
 ?>
 <div class="large-12 col">
-    <h2 class="feedback-subheader">Читать еще</h2>
+    <p class="h2 for-h2 feedback-subheader">Читать еще</p>
 
     <p class="feedback-subheader-right">
         <a style="text-decoration: underline;" href="/about/cases/"> Посмотреть все</a></p>
